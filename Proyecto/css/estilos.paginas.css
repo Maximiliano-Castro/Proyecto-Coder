@@ -78,8 +78,6 @@ animation: infinite;
 }
 .contenido_principal{
     width: 100%;
-    height: 100vh;
-
 }
 
 footer{
@@ -106,12 +104,18 @@ footer{
     margin: auto;
 }
 .formulario{
-    padding-top: 170px;
+    padding-top: 40px;
 
 }
 #inputMensaje{
     resize: none;
 }
+.ubicacion{
+    padding-top: 175px;
+    text-align: justify;
+    margin-left: 50px;
+}
+
 
 @media screen and (max-width:768px){
     .eslogan h2{

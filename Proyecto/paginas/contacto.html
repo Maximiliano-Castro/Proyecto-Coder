@@ -40,35 +40,55 @@
         El required es para señalar que esas casillas del formulario son obligatorias -->
     
     <main class="fondo_principal">
-        <div class="contenido_principal container">
 
-            <div class="col-5 col-md-6 h-100 formulario">
-                <div class="row mb-4">
+        <div class="container">
+            <div class="row">
+                <div class="col formulario">
+                    <h2 class=" pt-5">
+                        Envianos un mensaje
+                    </h2>
+
+                    <form action="#">
+                    <div >
                         <label class="col-2 col-form-label" for="inputNombre" class="form-label">Nombre</label>
-                        <div class="col-10">
-                            <input type="text" class="form-control" id="inputNombre">
-                        </div>
-                </div>
-                <div class="row mb-4">
-                    <label class="col-2 col-form-label" for="inputEmail" class="form-label">Email</label>
-                    <div class="col-10">
+                    </div>
+                    <div >
+                        <input type="text" class="form-control" id="inputNombre">
+                    </div>
+                    <div >
+                        <label class="col-2 col-form-label" for="inputEmail" class="form-label">Email</label>
+                    </div>
+                    <div>
                         <input type="email" class="form-control" id="inputEmail">
                     </div>
-                </div>
-                <div class="row mb-4">
-                    <label class="col-2 col-form-label" for="inputNumero" class="form-label">Teléfono</label>
-                    <div class="col-10">
+                    <div>
+                        <label class="col-2 col-form-label" for="inputNumero" class="form-label">Teléfono</label>
+                    </div>
+                    <div>
                         <input type="text" class="form-control" id="inputNumero">
                     </div>
-                </div>
-                <div class="row mb-4">
-                    <label class="col-2 col-form-label" for="inputMensaje" class="form-label">Mensaje</label>
-                    <div class="col-10">
-                    <textarea class="form-control" name="" id="inputMensaje" cols="75" rows="6"></textarea>
+                    <div>
+                        <label class="col-2 col-form-label" for="inputMensaje" class="form-label">Mensaje</label>
                     </div>
-                </div>
-                <div class="d-flex justify-content-end">
+                    <div>
+                        <textarea class="form-control" name="" id="inputMensaje" cols="75" rows="6"></textarea>
+                    </div>
+                    <div class="d-flex justify-content-end mt-2">
                     <button class="btn btn-primary" type="submit">Enviar</button>
+                    </div>
+                    </form>
+                </div>
+                <div class="col ubicacion">
+                    <div class="row ">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53329.62529165852!2d-70.53563033522623!3d-33.3422958859263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cbda92d375f5%3A0xee4d7bd4bdaf24c3!2sLo%20Barnechea%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1662084442565!5m2!1ses!2scl" width="400px" height="200px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+                    </div>
+                    <div class="row">
+                        <p>
+                            Visitanos, estamos ubicados en la comuna de lo Barnechea.
+                            Atendemos de Martes a Sabado. Entre las 10:00 y 19:00 hrs.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
