@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    max-width: 100%;
+    max-height: 100vh;
+}
+header{
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    z-index: 1;
+    padding: 2rem 4rem;
+}
+
+.menu_navegacion{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.navegacion ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 35px;
+}
+
+.navegacion ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+}
+.navegacion ul li a:hover{
+    color: red;
+    font-size: 1.3rem;
+}
+.logo{
+    height: 100%;
+    display: flex;
+    
+}
+.logo img{
+    width: 140px;
+}
+.contenido_principal{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(5, 10, 5, 0.8),rgba(155, 152, 155, 0.8)), url(../src/fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 40px;
+}
+.eslogan{
+display: flex;
+height: 60%;
+align-items:flex-end;
+
+}
+.eslogan h2{
+    color: white;
+    font-size: 2rem;
+    text-align: justify;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    transform: translateY(-85px);
+}
+.redes{
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.copy h6{
+    padding-top: 15px;
+    color: white;
+    font-size: 1rem;
+}
+.menu_icono img{
+    width: 30px;
+    height: 30px;
+    border-radius: 2px;
+}
+.navegacion #check{
+    transform: translateX(23px);
+
+}
+.menu_icono, #check{
+    display: none;
+}
+
+
+@media screen and (max-width:1200px){
+    .eslogan h2{
+        font-size: 1.8rem;
+}
+.contenido_principal{
+    background-position: 70%;
+}
+}
+@media screen and (max-width:768px){
+    .eslogan h2{
+        font-size: 1.5rem;
+    }
+    .logo img{
+        width: 100px;
+    }
+    .checkboton{
+        display: block;
+    }
+    .menu_icono{
+        display: block;
+        position: fixed;
+        top: 32px;
+        right: 20px;
+        cursor: pointer;
+    }
+    .navegacion ul{
+        position: fixed;
+        justify-content: right;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        height: 100vh;    
+        right: 0;
+        background: rgb(4, 4, 4)
+    }
+    .navegacion ul li{
+        padding: 1.2rem;
+        display: flex;
+        justify-content: center; 
+        margin: 0;   
+    }
+    #check:checked ~ ul{
+        left: 0;
+        height: auto;
+    }
+}
